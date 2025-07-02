@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SpiderVerse_website/static/css/main.5359d136.css",
+    "main.js": "/SpiderVerse_website/static/js/main.55e48615.js",
+    "index.html": "/SpiderVerse_website/index.html",
+    "main.5359d136.css.map": "/SpiderVerse_website/static/css/main.5359d136.css.map",
+    "main.55e48615.js.map": "/SpiderVerse_website/static/js/main.55e48615.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5359d136.css",
+    "static/js/main.55e48615.js"
+  ]
+}
