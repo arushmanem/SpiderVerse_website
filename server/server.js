@@ -17,11 +17,7 @@ app.get('/api/:table/data', (req, res) => {
     res.json(['table']);
 });
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", '*'); // or '*'
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+app.use(cors()); // Allows any origin
 
 
 // Start server
