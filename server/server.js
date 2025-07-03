@@ -10,7 +10,8 @@ const FALLBACK_IMAGES = [
 ];
 
 // Database setup
-const db = new sqlite3.Database('/Users/arushmanem/Desktop/AM_Databases/SpiderVerse.db', (err) => {
+//const db = new sqlite3.Database('/Users/arushmanem/Desktop/AM_Databases/SpiderVerse.db', (err) => {
+const db = new sqlite3.Database('https://github.com/arushmanem/SpiderVerse_website/blob/main/server/SpiderVerse.db', (err) => {
   if (err) console.error(err.message);
   console.log('🕷️ Connected to Spider-Verse database!');
 });
