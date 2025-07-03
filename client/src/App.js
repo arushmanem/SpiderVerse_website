@@ -3,6 +3,13 @@ import { Routes, Route, Link, useNavigate, useParams, useLocation } from 'react-
 import axios from 'axios';
 import './App.css';
 
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'https://arushmanem.github.io'  // ✅ Only allow your frontend
+}));
+
+
 // Image configuration
 const IMAGE_CONFIG = {
   heroes: {
