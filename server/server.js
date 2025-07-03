@@ -1,3 +1,6 @@
+const express = require('express');
+const app = express();
+
 // API Endpoints
 app.get('/api/test', (req, res) => {
   res.json(['heroes', 'villains', 'dimensions', 'media', 'crossovers', 'merchandise']);
