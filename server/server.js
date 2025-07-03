@@ -17,7 +17,16 @@ app.get('/api/:table/data', (req, res) => {
     res.json(['table']);
 });
 
-app.use(cors()); // Allows any origin
+// app.use(cors()); // Allows any origin
+
+app.use(express.json());
+const cors = require('cors');
+app.use(cors({
+  origin: [
+    'https://arushmanem.github.io', // Your GitHub Pages
+    'http://localhost:3000'         // For local dev
+  ]
+}));
 
 
 // Start server
