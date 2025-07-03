@@ -14,7 +14,7 @@ app.get('/api/tables', (req, res) => {
 
 app.get('/api/:table/data', (req, res) => {
     const table = req.params.table;
-    res.json([table]);
+    res.json(['table']);
 });
 
 
